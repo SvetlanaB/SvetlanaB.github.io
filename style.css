@@ -112,7 +112,6 @@ body {
 .text a {
 	display: block;
 	background:  #ffffff;
-	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 	width: 212px;
 	height: 45px;
 	text-decoration: none;
@@ -128,6 +127,8 @@ body {
 
 .text a:hover {
 	background:  #ffffff url('img/arrow.png') no-repeat 175px 16px;
+	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+
 }	
 
 .navigation {
@@ -171,7 +172,6 @@ body {
 	height: 35px;
 	display: block;
 	margin-top: -5px;
-	transition: 0.5s;
 }
 
 
@@ -412,7 +412,6 @@ body {
 .text2 a {
 	display: block;
 	background:  #ffffff;
-	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 	width: 212px;
 	height: 45px;
 	text-decoration: none;
@@ -427,6 +426,7 @@ body {
 
 .text2 a:hover {
 	background:  #ffffff url('img/arrow.png') no-repeat 175px 16px;
+	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 }	
 
 .navigation2 {
@@ -471,7 +471,6 @@ body {
 	height: 35px;
 	display: block;
 	margin-top: -5px;
-	transition: 0.5s;
 }
 
 
@@ -539,7 +538,6 @@ body {
 .text3 a {
 	display: block;
 	background:  #ffffff;
-	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 	width: 212px;
 	height: 45px;
 	text-decoration: none;
@@ -554,6 +552,7 @@ body {
 
 .text3 a:hover {
 	background:  #ffffff url('img/arrow.png') no-repeat 175px 16px;
+	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
 }
 
 /*след блок*/
@@ -919,6 +918,12 @@ margin-right: 172px;
 	width: 42px;
 	height: 29px;
 	margin: 71px auto 140px;
+	transition: transform 1s;
+}
+
+.load:hover {
+	transform: rotate(-360deg) scale(1.2);
+	-o-transform: rotate(-360deg);
 }
 
 .trending_products1 {
@@ -979,11 +984,46 @@ margin-right: 172px;
 	margin: 72px auto 0;
 }
 
+.chairs {
+	float: left;
+}
+
 .products_details img {
 	width: 570px;
 	height: 570px;
-	float: left;
 	margin-right: 61px;
+}
+
+.products_details .mini_chairs {
+	width: 232px;
+	margin-left: 150px;
+}
+
+.products_details .mini_chairs li {
+	float: left;
+	margin-right: 10px;
+	width: 70px;
+	height: 71px;
+	list-style-type: none; 
+}
+
+.products_details .mini_chairs li a {
+	display: block;
+	width: 70px;
+	height: 71px;
+}
+
+.products_details .mini_chairs li:first-child {
+	background: url(img/controll.jpg) no-repeat;
+}
+
+.products_details .mini_chairs li:nth-child(2) {
+	background: url(img/controll1.jpg) no-repeat;
+}
+
+.products_details .mini_chairs li:last-child {
+	background: url(img/controll2.jpg) no-repeat;
+	margin-right: 0px;
 }
 
 .text5 {
@@ -1041,7 +1081,6 @@ margin-right: 172px;
 	display: block;
 	width: 510px;
 	height: 71px;
-	box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
 	background-color: #f44336;
 	color: #ffffff;
 	font-size: 22px;
@@ -1058,6 +1097,7 @@ margin-right: 172px;
 
 .text5 a:hover {
 	background:  #f44336 url('img/arrow1.png') no-repeat 350px 22px;
+	box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);	
 }
 
 
@@ -1080,3 +1120,4 @@ margin-right: 172px;
 	list-style-type: none;
 	width: 1170px;
 }
+
