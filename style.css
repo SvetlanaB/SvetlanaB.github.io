@@ -952,6 +952,7 @@ margin-right: 172px;
 .menu_product_deails_block {
 	height: 70px;
 	background-color: #f4f4f4;
+	clear: both;
 }
 
 .menu_product_deails {
@@ -982,6 +983,7 @@ margin-right: 172px;
 .products_details {
 	width: 1140px;
 	margin: 72px auto 0;
+	clear: both;
 }
 
 .chairs {
