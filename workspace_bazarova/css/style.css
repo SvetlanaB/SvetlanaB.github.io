@@ -2,13 +2,13 @@ body {
 	font-family: "Arial";
 }
 
-.pixelperfect {
+/*.pixelperfect {
 position:absolute;
 opacity:0.2;
 z-index:1;
 left: 119.6px;
 top: 0;
-}
+}*/
 
 main {
 	width: 1280px;
