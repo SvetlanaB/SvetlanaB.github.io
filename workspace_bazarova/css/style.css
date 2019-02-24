@@ -28,7 +28,7 @@ h2 {
 header {
 	height: 278px;
 	background-color: #445161;
-	padding-top: 44px;
+	padding-top: 45px;
 }
 
 header .text {
@@ -83,6 +83,7 @@ header .text ul li{
 .about h2 {
 	text-align: left;
 	margin-bottom: 30px;
+	margin-top: 0;
 }
 
 .about article p {
