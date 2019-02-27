@@ -8,10 +8,12 @@
 </head>
 <body>
 	<!-- <img src="img/simple_psd_template.psd.png" class="pixelperfect"> -->
+	
+		 
 	<header>
 		<div class="info">
-		<article class="text">
-			<h1>Product name</h1>
+			<article class="text">
+				<h1>Product name</h1>
 				<ul>
 					<li>Put on this page information about your product</li>
 					<li>A detailed description of your product</li>
@@ -19,22 +21,34 @@
 					<li>Associate the page with the payment system</li>
 				</ul>
 			</article>
-			<div class="picture"></div>
+			<div class="picture"></div> <!-- изображения пока нет -->
 		</div>
 		<!-- <nav></nav> -->
+					<!-- пока временное решение для видео -->
+			<div class="fullscreen-bg">
+			    <div class="overlay">
+			    	<video loop muted autoplay poster="media/poster.jpg" class="fullscreen-bg_video">
+			        	<source src="media/dragon.mp4" type="video/mp4">
+			    	</video>
+				</div>
+			</div>
 	</header>
 	<main>
 		<section class="about">
+
 			<article>
 				<h2>About your product</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
 				<p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
 			</article>
-			<video>
-				<source src="">
+
+			<video controls poster="media/poster.jpg">
+				<source src="media/dragon2.mp4">
 			</video>
 		</section>
+		
 		<section class="pluses">
+			
 			<h2>Dignity and pluses product</h2>
 			<!-- вроде по смыслу это просто список плюсов -->
 			<div class="plusItems">
@@ -247,5 +261,6 @@
 				<p>Copyright © 2014 Product name · PSD HTML CSS</p>
 			</div>
 	</footer>
+				
 </body>
 </html>
