@@ -417,13 +417,15 @@ footer h2 {
 footer .contacts_block {
 	display: flex;
 	justify-content: space-between;
-	width: 785px;
+	width: 1200px;
 	margin: 0 auto;
 	height: 520px;
 }
 
 footer .form_contacts {
 	width: 500px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .form_contacts input {
@@ -431,13 +433,17 @@ footer .form_contacts {
 	border-radius: 5px;
 }
 
-footer .input_name, footer .input_email {
+.form_contacts label, legend {
+	color: #ffffff;
+}
+
+footer #input_name, footer #input_email {
 	width: 490px;
 	height: 25px;
 	padding: 10px 0px 0px 13px;
 }
 
-footer .input_message {
+footer #input_message {
 	width: 490px;
 	height: 160px;
 	border-radius: 5px;
