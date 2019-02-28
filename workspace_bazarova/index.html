@@ -46,7 +46,7 @@
 				<source src="media/dragon2.mp4">
 			</video>
 		</section>
-		
+
 		<section class="pluses">
 			
 			<h2>Dignity and pluses product</h2>
@@ -224,11 +224,36 @@
 		<h2>Contacts</h2>
 		<div class="contacts_block">
 			<form action="#" class="form_contacts">
-				
-					<input class="input_name" type="text"placeholder="Your name:"><br>
-					<input class="input_email" type="email" placeholder="Your email:"><br>
-					<textarea class="input_message" placeholder="Your message:"></textarea>
+				<fieldset>
+					<label for="name">Your name<em>*</em>
+					<input id="input_name" type="text"placeholder="Svetlana" required pattern="\S+[A-za-z]"><br>
+					<label for="name">Your email<em>*</em>
+					<input id="input_email" type="email" placeholder="bazarova@gmail.com" required pattern="\S+[A-za-z]"><br>
+					<label for="name">Your message<em>*</em>
+					<textarea id="input_message" placeholder="Your message:"></textarea>
 					<button class="button_submit" type="submit">Send</button>
+				</fieldset>	
+				<fieldset class="addional_info">
+					<legend>Addional information</legend>
+					<label for="telephone">Telephone</label>
+					<input id="telephone" placeholder="">
+					<label for="age">Age<em>*</em></label> <input id="age" type="number" required min="14" max="100"><br>
+				     <label for="gender">Gender</label>
+				     <select id="gender">
+				        <option value="male">Male</option>
+				        <option value="female">Female</option>
+				     </select><br><br>
+				     <legend>Your hobbies</legend>
+				    <label for="sport"><input id="sport" type="checkbox">Sport</label>
+				    <label for="turist"><input id="turist" type="checkbox">Turist</label>
+				    <label for="padi"><input id="padi" type="checkbox">Padi</label>
+				    <label for="travels"><input id="travels" type="checkbox">Travels</label>
+				    <label for="auto"><input id="auto" type="checkbox">Cars</label>
+				    <label for="it"><input id="it" type="checkbox">IT</label>
+				    <label for="it"><input id="it" type="checkbox">Other</label>
+
+
+				</fieldset>
 			</form>
 
 			<address>
