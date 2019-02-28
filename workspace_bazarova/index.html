@@ -14,14 +14,18 @@
 		<div class="info">
 			<article class="text">
 				<h1>Product name</h1>
-				<ul>
-					<li>Put on this page information about your product</li>
-					<li>A detailed description of your product</li>
-					<li>Tell us about the advantages and merits</li>
-					<li>Associate the page with the payment system</li>
-				</ul>
+				<nav>
+					<ul class="menu">
+						<li><a href="#section1">Pluses</a></li>
+						<li><a href="#section2">Scrinshots</a></li>
+						<li><a href="#section3">Reviews</a></li>
+						<li><a href="#section4">Prices</a></li>
+						<li><a href="#section5">Contacts</a></li>
+					</ul>
+				</nav>
+				
 			</article>
-			<div class="picture"></div> <!-- изображения пока нет -->
+			<div class="picture"></div> <!-- изображения пока нет, добавлю позже, наверно здесь будет лого -->
 		</div>
 		<!-- <nav></nav> -->
 					<!-- пока временное решение для видео -->
@@ -49,7 +53,7 @@
 
 		<section class="pluses">
 			
-			<h2>Dignity and pluses product</h2>
+			<h2 id="section1">Dignity and pluses product</h2>
 			<!-- вроде по смыслу это просто список плюсов -->
 			<div class="plusItems">
 				<section>
@@ -92,7 +96,7 @@
 		</section>
 
 		<section class="scrinshots">
-			<h2>Scrinshots</h2>
+			<h2 id="section2">Scrinshots</h2>
 			<div class="items">
 				<article>
 					<figure>
@@ -126,7 +130,7 @@
 		</section>
 
 		<section class="reviews">
-			<h2>Reviews</h2>
+			<h2 id="section3">Reviews</h2>
 			<div class="reviewItems">
 				<article>
 					<figure>
@@ -161,7 +165,7 @@
 		</section>
 
 		<section class="buy">
-			<h2>Buy it now</h2>
+			<h2 id="section4">Buy it now</h2>
 			
 			<div class="price_rates">
 				<section class="standart">
@@ -221,38 +225,54 @@
 	</main>
 	<div class="clr"></div>
 	<footer>
-		<h2>Contacts</h2>
+		<h2 id="section5">Contacts</h2>
 		<div class="contacts_block">
 			<form action="#" class="form_contacts">
 				<fieldset>
-					<label for="name">Your name<em>*</em>
-					<input id="input_name" type="text"placeholder="Svetlana" required pattern="\S+[A-za-z]"><br>
-					<label for="name">Your email<em>*</em>
-					<input id="input_email" type="email" placeholder="bazarova@gmail.com" required pattern="\S+[A-za-z]"><br>
-					<label for="name">Your message<em>*</em>
-					<textarea id="input_message" placeholder="Your message:"></textarea>
-					<button class="button_submit" type="submit">Send</button>
+					<label for="name">Your name<em>*</em></label>
+					<input id="input_name" type="text" placeholder="Svetlana" autofocus required pattern="\S+[A-za-z]"><br>
+					<label for="name">Your email<em>*</em></label>
+					<input id="input_email" type="email" placeholder="email@server.com" required pattern="\S+[A-za-z]"><br>
+					<label for="name">Your message<em>*</em></label>
+					<textarea id="input_message" placeholder="Your message:" required></textarea>
+					<!-- <button class="button_submit" type="submit">Send</button> -->
 				</fieldset>	
 				<fieldset class="addional_info">
 					<legend>Addional information</legend>
-					<label for="telephone">Telephone</label>
-					<input id="telephone" placeholder="">
-					<label for="age">Age<em>*</em></label> <input id="age" type="number" required min="14" max="100"><br>
-				     <label for="gender">Gender</label>
-				     <select id="gender">
+					<label for="telephone">Your telephone</label>
+					<input id="telephone" type="tel" placeholder="+74951111"><br>
+					<label for="age">Your age</label> 
+					<input id="age" type="number" min="8" max="100"><br>
+				    <label for="gender">Gender</label>
+				    <select id="gender">
 				        <option value="male">Male</option>
 				        <option value="female">Female</option>
-				     </select><br><br>
-				     <legend>Your hobbies</legend>
+				    </select><br><br>
+				    <label for="date">Date of Birth</label>&nbsp;<input id="date" type="date" min="1900-01-01" max="2019-02-28"><br>
+				    <label for="color">Your favorite color</label> <input id="color" type="color" ><br>
+				    <legend>Your hobbies</legend>
 				    <label for="sport"><input id="sport" type="checkbox">Sport</label>
 				    <label for="turist"><input id="turist" type="checkbox">Turist</label>
 				    <label for="padi"><input id="padi" type="checkbox">Padi</label>
 				    <label for="travels"><input id="travels" type="checkbox">Travels</label>
-				    <label for="auto"><input id="auto" type="checkbox">Cars</label>
+				    <label for="auto"><input id="auto" type="checkbox">Cars</label><br>
 				    <label for="it"><input id="it" type="checkbox">IT</label>
-				    <label for="it"><input id="it" type="checkbox">Other</label>
-
-
+				    <label for="other"><input id="other" type="checkbox">Other</label><br>
+				    
+				    <legend>Your favorite film genre</legend>
+				     <label for="film">Genre</label>
+				     <input id="film" list="dl_film">
+					
+					<datalist id="dl_film">
+					        <option label="The Diamond ArmComedy" value="">
+					        <option label="The Lord of the Rings" value="Fantasy">
+					        <option label="Back to the Future" value="Fantastic">
+					        <option label="The Shawshank Redemption" value="Drama">
+					        <option label="It" value="Horror">
+					        <option label="The Silence of the Lambs" value="Thriller, detective">
+					        <option label="Other films" value="Other">
+					</datalist><br>
+					<button class="button_submit" type="submit">Send</button>
 				</fieldset>
 			</form>
 
