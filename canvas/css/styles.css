@@ -1,0 +1,121 @@
+body {
+	background-color: #cfcfcf;
+	font-family: 'Arial', sans-derif;
+}
+
+.container {
+	width: 802px;
+	margin: 0 auto 100px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	background-color: #DCDCDC;
+}
+
+.header {
+	padding: 5px 0px 0px 15px;
+	height: 40px;
+}
+
+.tools {
+	margin: 15px auto 15px;
+	width: 800px;
+}
+
+.coordinates {
+	height: 35px;
+}
+
+button {
+	width: 30px;
+	height: 30px;
+	background-color: #66CDAA;
+	color: #ffffff;
+	border-radius: 3px;
+	box-shadow: none;
+	border: none;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+		
+button:hover {
+	background-color: #66DDAA;
+}
+
+#brush {
+	background: url('../img/icon_pencil.png') no-repeat 5px 5px;
+	background-size: 20px 20px;
+	background-color: #66CDAA;
+}
+
+#brush:hover,
+#circleBrush:hover {
+	background-color: #66DDAA;
+}
+
+#circleBrush {
+	background: url('../img/icon_brush.png') no-repeat 5px 5px;
+	background-size: 20px 20px;
+	background-color: #66CDAA;
+}
+
+#clear {
+	width: 100px;
+}
+
+#sizeSelect {
+	height: 30px;
+	color: #66CCAA;
+	border: none;
+	border-radius: 3px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.toolColor {
+	height: 30px;
+	display: block;
+	float: left;
+	margin-right: 5px;	
+}
+
+.toolColor #color {
+	height: 20px;
+}
+
+#save {
+	width: 100px;
+	float: right;
+	margin-right: 50px;
+}
+
+#canv {
+	width: 800px;
+	height: 500px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff; 
+}
+
+.canv {
+	margin: 15px auto 15px;
+	width: 802px;
+}
+
+.footer {
+	margin: 0 auto;
+	height: 35px;
+}
+
+.footer p{
+	margin-left: 20px;
+	float: left;
+	font-size: 12px;
+}
+
+#time {
+	font-size: 12px;
+	float: right;
+	margin-right: 20px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ABOBE PHOTOZHAB</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+</head>
+<body>
+
+	<div class="container">
+		<div class="header">
+			<div class="tools">
+				<div class="coordinates">
+					
+					<!-- <button class="toolButton" id='brush'><i class="fas fa-pencil-alt" onclick="event.stopPropagation()"></i></button> -->
+					<button class="toolButton" id='brush'></button>
+					<button class="toolButton" id='circleBrush'></button>
+					<button class="toolButton" id='clear'>Очистить</button>
+					<select id='sizeSelect'>
+						<option>5</option>
+						<option>10</option>
+						<option>15</option>
+						<option>20</option>
+					</select>
+
+					<div class="toolColor">
+						<input type="color" id="color">
+					</div>
+					
+					<button onclick="saveCanvasAsImageFile()" id="save">Сохранить</button>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="canv">
+			<canvas id="canv" width="800" height="500"></canvas>
+		</div>
+
+		<div class="footer">
+			<p id="x"><b>x: </b> <span id="xCoord"></span></p>
+			<p id="y"><b>y: </b> <span id="yCoord"></span></p>
+			<div class="time" id="time"></div>
+		</div>
+	</div>			
+
+		<script src="js/script.js"></script>
+</body>
+</html>
