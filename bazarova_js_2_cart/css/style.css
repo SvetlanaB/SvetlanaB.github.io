@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&subset=cyrillic,cyrillic-ext');
+
+/*0F6489 - синий
+6A5D93 - сиреневый
+77BDB5 бирюзовый
+CFECCE салатовый
+AA84A9 розоватый
+#461B0A - цвет для шрифта
+#29b297 - цвет для блоков
+22AE6D
+*/
+body, html {
+	height: 100%;
+}
+
+body{
+	background-color: #f8f8f8;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+h1 {
+	color: #6A5D93;
+	font-weight: 500;
+}
+
+h3 {
+	color: #29b297;
+}
+
+header {
+	/*display: flex;
+	align-content: space-between;*/ /*отсебятина*/
+	/*background-color: #AA84A9;*/
+	background: url(../img/header.jpg);
+	height: 100px;
+}
+
+main {
+	padding: 0px 10px 0px 10px;
+	clear: both;
+	font-size: 14px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+	max-width: 1000px;
+	height: 50px;
+	background-color: #AA84A9; 
+	color: #FFFFFF;
+	/*margin-top: 10px;*/
+	margin: -50px auto 0;
+}
+
+footer p {
+	text-align: left;
+	padding: 10px 0px 0px 10px;
+	margin: 0;
+}
+
+.container {
+	max-width: 1000px;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+.logo {
+	height: 100px;
+	float: left;
+	margin: 10px 10px 10px 20px;
+}
+.logo img{
+	width: 120px;
+}
+
+/*меню*/
+.menu{
+	list-style-type: none; 
+	width: 350px;
+	height: 100px;
+	float: left;
+}
+
+.menu li {	
+	display: inline-block; 
+	margin-left: 20px;
+	padding-top: 20px;
+}
+
+.menu li a{
+	color: #FFFFFF;	
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.menu li a:hover {
+	color: #6A5D93;
+}
+
+
+
+
+
+
+
+
+/*страница Каталог*/
+/*.catalog {
+	list-style-type: none; 
+}
+.catalog_product {
+	float: left;
+	margin: 10px;
+	width: 120px;
+	text-align: center;
+	padding: 5px;
+}
+.catalog_product a {
+	color: #AA84A9;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.catalog_product a:hover {
+	color: #6A5D93;
+}
+.catalog img[alt="choco"] {
+	width: 120px;
+}
+.catalog img[alt="card"] {
+	width: 90px;
+}*/
+
+
+
+
+/*страница подробное описание товара*/
+.heading, .heading2 {
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+}
+
+.short_description {
+	float: left;
+	margin-left: 50px;
+}
+.short_text {
+ 	color: #707070;
+ 	font-size: 14px;
+ 	font-style: italic;
+ 	line-height: 16px;
+}
+.button-product{
+	background-color: #77BDB5;
+	width: 100px;
+	height: 30px;
+	color: #FFF;
+	border: 1px solid #29b297;
+}
+.button-product:hover {
+	background-color: #29b297;
+}
+.button-product:active {
+	background-color: #6A5D93;
+}
+
+.content_product {
+	padding: 0px 10px 0px 10px;
+}
+
+.content_product p::first-letter {
+	color: #77BDB5;
+	font-size: 18px;
+	font-weight: 600;
+ }
+
+
+.full_text {
+	color: #484343;
+ 	font-size: 16px;
+ 	font-weight: 400;
+ 	line-height: 24px;
+ 	text-align: left;
+}
+
+.character li{  
+	color: #29b297;
+	font-size: 16px;
+	font-style: italic;
+	list-style-image: none; 
+}
+
+.character > li {
+	list-style-image: url(../img/choco_mark.png); 
+}
+
+.table_product {
+	border-collapse: collapse;
+}
+
+.table_product td{
+	border: 1px solid #6A5D93; 
+	padding: 5px;
+}
+
+.table_product_name {
+	line-height: 25px;
+}
+
+.img_product {
+	outline: 4px solid #29b297;
+	width: 200px;
+	float: left;
+}
+
+.img_product:hover {
+	outline: none;
+}
+
+
+
+
+
+ /*с урока*/
+/*.heading{
+	color: darkblue;
+	background-color: #ccc;
+	border: 4px solid black;
+	text-align: center;
+}
+img[alt="choco"] {
+	border: 4px solid green;
+}
+.blue{
+	color: blue;
+	background-image: url(img/card_choco1.jpg);
+	background-repeat: no-repeat;
+	background-position: 50px 10px;
+	background-size: 30px;   
+	background: url(img/card_choco1.jpg) no-repeat 10px 10px;
+}
+
+.list{
+	list-style-type: none;
+}*/
+
+/*найти только дочерние элементы*/
+/*.list > li{ 
+	width: 70px;
+	height: 25px;
+	border: 1px solid black;
+}*/
+
+/*соседний элемент параграф*/
+/*.list + p {
+	color: darkgreen;
+}
+
+.link{
+	text-decoration: none;
+	text-transform: lowercase;
+}*/
+
+/*группирование стилей*/
+/*h1,
+h3,
+p {
+	text-align: center;
+}*/
+/*максимальный приоритет*/
+/*p{
+	text-align: left !important; 
+}*/
+/*стиль ниже срабатывает*/
+/*p{
+	text-align: right;
+}
+p{
+	color: green;
+}
+.menu li{
+	height: 100px;
+}
+li {
+	width: 100px;
+	height: 30px;
+	border: 1px solid black;
+}*/

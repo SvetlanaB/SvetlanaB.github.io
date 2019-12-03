@@ -1,0 +1,60 @@
+/*страница контакты*/
+.form_ask {
+	width: 650px;
+}
+
+/*input[type="text"], textarea {
+	text-transform: capitalize;
+	margin: 2px;
+	font-size: 14px;
+	color: #6A5D93;
+	background-color: #CFECCE;
+}*/
+
+.input_name, .input_email, .input_phone {
+	text-transform: capitalize;
+	margin: 2px;
+	font-size: 14px;
+	color: #6A5D93;
+	/*background-color: #CFECCE;*/
+	width: 180px;
+	height: 25px;
+}
+
+
+.error-msg{
+            color: red;
+            margin: 10px 0;
+        }
+        .invalid{
+            border: 2px solid red;
+        }
+        .valid{
+            border: 2px solid green;
+        }
+
+input[type="text"] {
+	width: 180px;
+	height: 25px;
+}
+
+.input_name {
+	width: 199px;
+}
+
+.input_email {
+	width: 194px;
+}
+
+.form_ask .input_email:focus {
+	color: #fff;
+	background-color: #AA84A9;
+}
+
+.maps iframe {
+	width: 100%;
+}
+
+.empty {
+	height: 45px;
+}
